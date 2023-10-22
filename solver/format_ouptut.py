@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def output_to_xlsx(dictionary: dict(), excel=True, csv=False) -> None:
+def output_to_excel(dictionary: dict(), excel=True, csv=False) -> None:
     """
     Необходимо передать словарь вида:
     {
@@ -23,8 +23,3 @@ def output_to_xlsx(dictionary: dict(), excel=True, csv=False) -> None:
         df.to_excel("solution.xlsx")
     if csv:
         df.to_csv("solution.csv")
-
-
-# test = {"X": [(i + 1, i + 1) for i in range(30)]}
-
-# output_to_xlsx(test)

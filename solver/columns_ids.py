@@ -1,0 +1,3 @@
+SYS_CNT = 0 + 2
+FETCH_COMPLETE = 1 + 2
+PC_ID = 2 + 2
