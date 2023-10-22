@@ -17,7 +17,7 @@ def output_to_excel(dictionary: dict(), excel=True, csv=False) -> None:
 
     for key, value in dictionary.items():
         for t in value:
-            df.loc[t[0], t[1]] = key
+            df.loc[t[1], t[0]] = key
 
     if excel:
         df.to_excel("solution.xlsx")
